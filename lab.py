@@ -86,4 +86,20 @@ def determine_season():
         print(f"{month} {day} is in Autumn")
 
 # Call the function
-determine_season()
+# determine_season()
+
+def guess_number():
+    answer = 42
+    for item in range(0,5):
+        print(f"you have {5-item} guesses")
+        response = int(input())
+        if response > answer:
+            print("too high")
+        elif response < answer:
+            print("too low")
+        elif response == answer:
+            print("correct!")
+            break
+        if item == 4:
+            print("you did not get it five attemts sorry.")
+guess_number()
